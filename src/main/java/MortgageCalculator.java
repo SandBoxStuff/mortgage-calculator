@@ -21,6 +21,10 @@ public class MortgageCalculator {
 
 	}
 
+	public static void fairwell() {
+		System.out.println(userName + ", thank you for using our application");
+	}
+
 	public static void main(String[] args) {
 
 		do {
@@ -30,6 +34,7 @@ public class MortgageCalculator {
 			calculateMonthlyPayment();
 			anotherUser();
 		} while (input.equalsIgnoreCase("yes"));
+		fairwell();
 	}
 
 	public static void propertyId() {
@@ -57,5 +62,4 @@ public class MortgageCalculator {
 		System.out.println("Hello, " + userName + ". Welcome!");
 	}
 
-	double monthlyPayment;
 }
